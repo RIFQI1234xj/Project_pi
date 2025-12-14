@@ -57,8 +57,8 @@ export const Footer: React.FC = () => {
         </div>
         
         {/* Footer Bottom */}
-        <div className="border-t border-emerald-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; MI Al-Hasani. All rights reserved.</p>
+        <div className="border-t border-emerald-800 pt-8 flex justify-center items-center text-sm text-gray-400">
+          <p className="text-center">&copy; MI Al-Hasani. All rights reserved.</p>
         </div>
       </div>
     </footer>
