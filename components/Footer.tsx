@@ -3,38 +3,40 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from 'lucide-react'
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-emerald-900 text-white pt-16 pb-10">
+    <footer className="bg-emerald-900 text-white pt-8 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Kolom 1: Identitas Sekolah */}
-          <div>
-            <h3 className="text-xl font-bold mb-6 text-yellow-400">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 className="text-2xl font-extrabold mb-0 text-yellow-400 tracking-wide">
               MI Al-Hasani
             </h3>
-            <p className="text-gray-300 mb-6 text-sm leading-relaxed pr-4">
-              Mewujudkan generasi yang berakhlakul karimah, cerdas, terampil, dan berwawasan global dengan landasan nilai-nilai Islami.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors"><Facebook size={24} /></a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors"><Instagram size={24} /></a>
-              <a href="#" className="text-white hover:text-yellow-400 transition-colors"><Youtube size={24} /></a>
+            <img
+              src={encodeURI('/logo madrasah hebat.png')}
+              alt="logo madrasah hebat"
+              className="h-24 w-auto mb-0"
+            />
+            <div className="flex space-x-3 mt-1">
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/30 text-white hover:bg-yellow-400 hover:text-emerald-900 transition-colors"><Facebook size={20} /></a>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/30 text-white hover:bg-yellow-400 hover:text-emerald-900 transition-colors"><Instagram size={20} /></a>
+              <a href="#" className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-white/30 text-white hover:bg-yellow-400 hover:text-emerald-900 transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
           
           {/* Kolom 2: Kontak Kami */}
           <div>
             <h4 className="text-lg font-bold mb-6 text-white">Kontak Kami</h4>
-            <div className="space-y-5 text-sm text-gray-300">
+            <div className="space-y-3 text-sm text-gray-300">
               <div className="flex items-start">
-                <MapPin size={22} className="mr-3 flex-shrink-0 text-yellow-500" />
+                <MapPin size={20} className="mr-2 flex-shrink-0 text-yellow-500" />
                 <span className="leading-relaxed">Jl. Kp. Babakansirna 02/02 Ds. Jogjogan Kec. Cisarua Kab. Bogor 16750</span>
               </div>
               <div className="flex items-center">
-                <Phone size={22} className="mr-3 text-yellow-500" />
-                <span>+(0251) 8256657 </span>
+                <Phone size={20} className="mr-2 text-yellow-500" />
+                <span>+(0251) 8256657</span>
               </div>
               <div className="flex items-center">
-                <Mail size={22} className="mr-3 text-yellow-500" />
+                <Mail size={20} className="mr-2 text-yellow-500" />
                 <span>misalhasani@gmail.com</span>
               </div>
             </div>
